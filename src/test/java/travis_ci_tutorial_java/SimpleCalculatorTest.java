@@ -1,7 +1,5 @@
 package travis_ci_tutorial_java;
 
-import java.util.*;
-
 import static org.junit.Assert.*;
 import org.junit.*;
 

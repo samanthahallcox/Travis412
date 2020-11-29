@@ -3,12 +3,11 @@ package travis_ci_tutorial_java;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class ArrayOperationsNumZeroTest 
-{
+public class ArrayOperationsNumZeroTest {
    @Test
    public void testNumZeroEmptyArray() 
    {
-      int x[] = {};     // zero-sized array
+      int[] x = {};     // zero-sized array
       int n = ArrayOperations.numZero(x);
       assertEquals("0 zeros", 0, n);
    }
@@ -21,7 +20,4 @@ public class ArrayOperationsNumZeroTest
       assertEquals("0 zeros in an array with no zeros", 0, n);
    }
 
-
 }
-
-
