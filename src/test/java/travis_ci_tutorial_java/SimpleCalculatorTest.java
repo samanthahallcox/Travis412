@@ -53,7 +53,7 @@ public class SimpleCalculatorTest {
 			calc.add(value, 1); //max int value + 1
 			fail("Expected ArithmeticException from overflow");
 		} catch (ArithmeticException e) {
-			assertEquals("Overflow error", e.getMessage());
+			assertEquals("Integer overflow error", e.getMessage());
 		}
 	}
 }

@@ -2,6 +2,9 @@ package travis_ci_tutorial_java;
 
 public class SimpleCalculator {
 	public int add(int a, int b) {
+		long sum = (long)a + (long)b;
+		if(sum > Integer.MAX_VALUE)
+			throw new ArithmeticException("Integer overflow error");
 		return a + b;
 	}
 
