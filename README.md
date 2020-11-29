@@ -1,6 +1,6 @@
 # Travis412
 
-Bonus CI and TDD assignment for COSC 436, 11/29/2020
+Bonus CI and TDD assignment for Object Oriented Design and Programming, 11/29/2020
 Added minus, multiply, and divide features to SimpleCalculator.
 Added testMinus, testMultiply, testDivide, testDivideByZero, and testAddOverflow to SimpleCalculatorTest.
 
