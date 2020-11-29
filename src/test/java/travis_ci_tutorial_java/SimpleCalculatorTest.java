@@ -39,7 +39,7 @@ public class SimpleCalculatorTest {
 			calc.divide(a, b);
 			fail("Expected IllegalArgumentException from division by zero");
 		} catch (IllegalArgumentException e) {
-			//test passed
+			//test passed because divide handled division by zero with IllegalArgumentException
 		} catch (Exception e) {
 			fail("Expected IllegalArgumentException from division by zero");
 		}
