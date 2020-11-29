@@ -44,4 +44,16 @@ public class SimpleCalculatorTest {
 			fail("Expected IllegalArgumentException from division by zero");
 		}
 	}
+
+	@Test
+	public void testAddOverflow() {
+		SimpleCalculator calc = new SimpleCalculator();
+		int value = Integer.MAX_VALUE;
+		try {
+			calc.add(value, 1); //max int value + 1
+			fail("Expected ArithmeticException from overflow");
+		} catch (ArithmeticException e) {
+			assertEquals("Overflow error", e.getMessage());
+		}
+	}
 }
