@@ -29,4 +29,19 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.divide(10,2), 5);
 	}
+
+	@Test
+	public void testDivideByZero() {
+		SimpleCalculator calc = new SimpleCalculator();
+		int a = 5;
+		int b = 0;
+		try {
+			calc.divide(a, b);
+			fail("Expected IllegalArgumentException from division by zero");
+		} catch (IllegalArgumentException e) {
+			//test passed
+		} catch (Exception e) {
+			fail("Expected IllegalArgumentException from division by zero");
+		}
+	}
 }
